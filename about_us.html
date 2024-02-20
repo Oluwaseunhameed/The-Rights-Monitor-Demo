@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="mobile-header-flex-container">
+      <span style="font-size:30px;cursor:pointer" class="openbtn item-left" onclick="openNav()">&#9776;</span>
+      <a href="index.html" style="font-size:30px;cursor:pointer" class="myNavLogo item-right">Your Logo</a>
+    </div>
+    <div id="myNav" class="overlay">
+      <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+      <div class="overlay-content">
+        <a href="about_us.html">About Us</a>
+        <a href="news.html">News</a>
+        <a href="culture.html">Culture</a>
+        <a href="contact_us">Contact Us</a>
+      </div>
+    </div>
+    <nav>
+      <div class="left-links">
+          <ul>
+              <li><a href="about_us.html" id="about_us">About Us</a></li>
+              <!-- <li><a href="#">Link 2</a></li> -->
+              <li id="container">
+                <a href="#" id="search-link">Search</a>
+                <input type="text" id="search-input" placeholder="Type your search here" style="display: none;">
+              </li>
+          </ul>
+      </div>
+      <div class="right-links">
+          <ul>
+              <li><a href="news.html" id="news">News</a></li>
+              <li><a href="culture.html" id="culture">Culture</a></li>
+              <li><a href="human_rights.html" id="human_rights">Human Rights</a></li>
+              <li><a href="radio.html" id="radio">Radio</a></li>
+              <li><a href="videos.html" id="videos">Videos</a></li>
+              <li><a href="contact_us.html" id="contact_us">Contact Us</a></li>
+              <li class="logo"><a href="index.html" id="logo"><img src="logo.svg" alt="Logo"></a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-body">
+    <aside class="sidebar">
+        <div class="player">
+          <div class="details">
+            <div class="track-art"></div>
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Track Artist</div>
+          </div>
+          <div class="buttons">
+            <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+            <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-3x"></i></div>
+            <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+          </div>
+          <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+          </div>
+          <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+          </div>
+        </div>
+    
+        <div class="social-icons-container">
+          <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    
+        <section class="sidebar-section">
+            <h2 class="header-title">Breaking News</h2>
+          <div class="row">
+            <div class="column left">
+              <p class="sample-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ante sit amet odio sollicitudin, vitae molestie lectus finibus...</p>
+              <p class="time-paragraph">Time: 10:00 AM</p>
+            </div>
+            <div class="column right">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4rFyEwt_ypKGRASqGzMnUq6jHbvjuXfcWuw&usqp=CAU" alt="Image">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column left">
+              <p class="sample-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ante sit amet odio sollicitudin, vitae molestie lectus finibus...</p>
+              <p class="time-paragraph">Time: 10:00 AM</p>
+            </div>
+            <div class="column right">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4rFyEwt_ypKGRASqGzMnUq6jHbvjuXfcWuw&usqp=CAU" alt="Image">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column left">
+              <p class="sample-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ante sit amet odio sollicitudin, vitae molestie lectus finibus...</p>
+              <p class="time-paragraph">Time: 10:00 AM</p>
+            </div>
+            <div class="column right">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4rFyEwt_ypKGRASqGzMnUq6jHbvjuXfcWuw&usqp=CAU" alt="Image">
+            </div>
+          </div>
+        </section>
+        <!-- Add more content as needed -->
+    </aside>
+    <div class="main-content about-main-content">
+        <h1>About Us</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam justo nec lorem malesuada, non fringilla ipsum lacinia. Nullam ac nisi quis lectus lobortis rhoncus. Sed ultricies metus vel tempor ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam justo nec lorem malesuada, non fringilla ipsum lacinia. Nullam ac nisi quis lectus lobortis rhoncus. Sed ultricies metus vel tempor ultricies.</p>
+        <p>Integer nec magna ut nunc consequat fermentum sed a eros. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam justo nec lorem malesuada, non fringilla ipsum lacinia. Nullam ac nisi quis lectus lobortis rhoncus. Sed ultricies metus vel tempor ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam justo nec lorem malesuada, non fringilla ipsum lacinia. Nullam ac nisi quis lectus lobortis rhoncus. Sed ultricies metus vel tempor ultricies.</p>
+        <p>Etiam id turpis sapien. Nulla sagittis posuere justo, a varius nisl gravida nec. Nam maximus posuere ante a aliquet. Donec quis mollis arcu, at gravida ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam justo nec lorem malesuada, non fringilla ipsum lacinia. Nullam ac nisi quis lectus lobortis rhoncus. Sed ultricies metus vel tempor ultricies.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="row-container">
+      <div class="column">
+        <ul>
+          <li><a href="radio.html">Radio</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul>
+          <li><a href="human_rights.html">Human Rights</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-row">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+    <p class="copyright">&copy; 2024 Your Website. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>
